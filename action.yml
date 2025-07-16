@@ -1,6 +1,13 @@
 name: Calculate Action
+inputs:
+  x:
+    default: 0
+  y:
+    default: 0
 runs:
   using: "composite"
   steps:
     - run: echo "Hi, I am a Calculator action!"
+      shell: bash
+    - run: exho "x = ${{ inputs.x }}, y = ${{ inputs.y }}"
       shell: bash
