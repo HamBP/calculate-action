@@ -11,3 +11,9 @@ runs:
       shell: bash
     - run: echo "x = ${{ inputs.x }}, y = ${{ inputs.y }}"
       shell: bash
+    - id: plus
+      run: echo "result=$((${{ inputs.x }} + ${{ iputs.y }}))" >> $GITHUB_OUTPUT
+      shell: bash
+    - id: minus
+      run: echo "result=$((${{ inputs.x }} - ${{ iputs.y }}))" >> $GITHUB_OUTPUT
+      shell: bash
