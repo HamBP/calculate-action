@@ -1,4 +1,5 @@
 name: Calculate Action
+description: this is a test actions, so you shouldn't use it. haha
 inputs:
   x:
     default: 0
