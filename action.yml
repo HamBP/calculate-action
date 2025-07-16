@@ -9,5 +9,5 @@ runs:
   steps:
     - run: echo "Hi, I am a Calculator action!"
       shell: bash
-    - run: exho "x = ${{ inputs.x }}, y = ${{ inputs.y }}"
+    - run: echo "x = ${{ inputs.x }}, y = ${{ inputs.y }}"
       shell: bash
